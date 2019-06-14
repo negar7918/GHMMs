@@ -1,12 +1,32 @@
-# Author: Negar Safinianaini
+# MIT License
+#
+# Copyright (c) 2019 Negar Safinianaini
+#
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+#
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 # This is the implementation of the new method in the below paper published at AIME 2019:
 # "Gated Hidden Markov Models for Early Prediction of Outcome of Internet-based Cognitive Behavioral Therapy"
 
-# This implementation is intended for sequences up to length 150 and for longer ones, one should use log probabilities
+# This implementation is intended for sequences up to length 150 and for longer ones, one should use log probabilities.
 # This implementation was used for binary states in HMM and EM needs only 10 iterations (this fact is published already)
 # In case of having more states, one should implement the convergence criteria properly.
-# Value -1 is used to represent a missing observation or data point; here we handle missing values without imputation
+# Value -1 is used to represent a missing observation or data point; here we handle missing values without imputation.
 
 import numpy as np
 
